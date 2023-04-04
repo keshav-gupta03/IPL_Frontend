@@ -8,5 +8,8 @@ class IplService{
 
         return  axios.get(BASE_URL+"teams/"+teamName);
     }
+    getAllMatches(){
+        return axios.get(BASE_URL+"matches");
+    }
 }
 export default new IplService();
