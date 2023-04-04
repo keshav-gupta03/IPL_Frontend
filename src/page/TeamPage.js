@@ -18,8 +18,6 @@ function TeamPage() {
           console.log(err);
         });
     }
-    // axios
-    // .get("http://localhost:8080/ipl/teams/Mumbai%20Indians")
     fetchData();
   }, [teamName]);
 
