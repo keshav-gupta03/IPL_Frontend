@@ -6,15 +6,15 @@ import IplService from "../service/IplService";
 
 function MatchPage() {
   const [matches, setMatches] = useState({});
-  useEffect(() => {
-    IplService.getAllMatches()
-      .then((res) => {
-        setMatches(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+//   useEffect(() => {
+//     IplService.getAllMatches()
+//       .then((res) => {
+//         setMatches(res.data);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//   }, []);
   console.log(matches)
   return (
     <div className="matchPage">
