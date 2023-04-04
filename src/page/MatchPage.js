@@ -19,7 +19,7 @@ function MatchPage() {
   return (
     <div className="matchPage">
         
-      <h1>Match Page</h1>
+      <h1>this  is Match Page</h1>
     </div>
   );
 }
