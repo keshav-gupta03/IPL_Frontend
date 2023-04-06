@@ -8,8 +8,8 @@ class IplService{
 
         return  axios.get(BASE_URL+"teams/"+teamName);
     }
-    getAllMatches(){
-        return axios.get(BASE_URL+"matches");
+    getAllMatchesForTeamBetweenDate(teamName, year){
+        return axios.get(BASE_URL+"teams/"+teamName+"/matches?year="+year);
     }
 }
 export default new IplService();
