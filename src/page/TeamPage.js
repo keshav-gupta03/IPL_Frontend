@@ -8,6 +8,7 @@ function TeamPage() {
   const [team, setTeam] = useState({ matches: [] });
   const { teamName } = useParams();
 
+
   useEffect(() => {
     async function fetchData() {
       await IplService.getTeamDetails(teamName)
@@ -32,9 +33,9 @@ function TeamPage() {
   return (
     <div className="teamPage">
       <h1>Team Name : {team.teamName} </h1>
-      <MatchDetailCard teamName={team.teamName} match={team.matches[0]} />
+      {/* <MatchDetailCard teamName={team.teamName} match={team.matches[0]} /> */}
       {team.matches.slice(1).map((match) => (
-        <MatchSmallCard key={match.id} teamName={team.teamName} match={match} />
+        <MatchSmallCard key={match.id} teamName={teamName} match={match} />
       ))}
     </div>
   );

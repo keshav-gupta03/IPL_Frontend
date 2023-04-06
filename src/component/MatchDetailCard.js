@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function MatchDetailCard(props) {
-  const otherTeam =
-    props.match.team1 === props.teamName
+
+  console.log("ff");
+  const otherTeam = props.match.team1 == props.teamName
       ? props.match.team2
       : props.match.team1;
+
+  
 
   const otherTeamRoute = `/teams/${otherTeam}`;
 
